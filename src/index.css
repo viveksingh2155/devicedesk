@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cream: #D9D28B;
+  --color-sage: #B2BD7E;
+  --color-olive: #8E9162;
+  --color-forest: #6A795D;
+  --color-bg-main: #F7F7F1;
+  --color-bg-card: #FFFEF9;
+  --color-text-primary: #25291F;
+  --color-text-secondary: #777B68;
+  --color-border: #E9E7D9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #F7F7F1;
+  color: #25291F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for sleek SaaS feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F7F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D28B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8E9162;
+}
+
+/* Glassmorphism and natural card styling */
+.desk-card {
+  background: #FFFEF9;
+  border: 1px solid #E9E7D9;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(37, 41, 31, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.desk-card:hover {
+  border-color: #CED0B8;
+  box-shadow: 0 4px 16px rgba(37, 41, 31, 0.06);
+}
+
+.desk-input {
+  background-color: #FFFFFF;
+  border: 1px solid #E9E7D9;
+  color: #25291F;
+  border-radius: 10px;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.15s ease;
+}
+.desk-input:focus {
+  border-color: #8E9162;
+  box-shadow: 0 0 0 3px rgba(178, 189, 126, 0.25);
+}
+
+.desk-btn-primary {
+  background-color: #6A795D;
+  color: #FFFEF9;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.desk-btn-primary:hover {
+  background-color: #4C5841;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(106, 121, 93, 0.2);
+}
+.desk-btn-primary:active {
+  transform: translateY(0);
+}
+
+.desk-btn-secondary {
+  background-color: #F7F7F1;
+  color: #25291F;
+  border: 1px solid #E9E7D9;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.desk-btn-secondary:hover {
+  background-color: #E6EBCB;
+  border-color: #B2BD7E;
+}
+
+/* Priority Badges */
+.badge-critical {
+  background-color: #FEE2E2;
+  color: #991B1B;
+  border: 1px solid #F87171;
+}
+.badge-high {
+  background-color: #FFEDD5;
+  color: #C2410C;
+  border: 1px solid #FB923C;
+}
+.badge-medium {
+  background-color: #FEF3C7;
+  color: #B45309;
+  border: 1px solid #FCD34D;
+}
+.badge-low {
+  background-color: #E6EBCB;
+  color: #4C5841;
+  border: 1px solid #B2BD7E;
+}
+
+/* Carousel transitions */
+.carousel-slide {
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
+}
